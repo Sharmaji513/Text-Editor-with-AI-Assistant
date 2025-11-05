@@ -3,15 +3,7 @@
 A real-time collaborative text editor similar to Google Docs, featuring multi-user editing, document management, and AI-powered writing assistance using Google Gemini.
 
 ## 🎥 Demo Video
-
-<div align="center">
-
-**Watch the demo to see real-time collaboration, AI assistant features, and document management in action!**
-
-[📹 Click here to view/download demo video](./media/demo-video.mp4)
-
-
-</div>
+https://github.com/user-attachments/assets/8f2cd72f-40fe-4adc-90f3-b0bdcaab3854
 
 ## 🚀 Features
 
