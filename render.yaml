@@ -1,0 +1,35 @@
+# Render Blueprint Configuration
+# Deploy both frontend and backend services
+
+services:
+  # Backend API Service
+  - type: web
+    name: collaborative-editor-api
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false  # Set this in Render dashboard
+      - key: JWT_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: GEMINI_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: CLIENT_URL
+        value: https://collaborative-editor-frontend.onrender.com
+
+  # Frontend Service
+  - type: web
+    name: collaborative-editor-frontend
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: client/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://collaborative-editor-api.onrender.com/api
+
