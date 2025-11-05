@@ -6,12 +6,10 @@ A real-time collaborative text editor similar to Google Docs, featuring multi-us
 
 <div align="center">
 
-  <h3>Watch the demo to see real-time collaboration, AI assistant features, and document management in action!</h3>
+**Watch the demo to see real-time collaboration, AI assistant features, and document management in action!**
 
-  <video width="720" controls>
-    <source src="./media/demo-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+[📹 Click here to view/download demo video](./media/demo-video.mp4)
+
 
 </div>
 
